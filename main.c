@@ -5,6 +5,7 @@
 void usage()
 {
     printf("./s fib numCount\n");
+    printf("./s tree\n");
 }
 
 int main(int argc, char *argv[])
@@ -16,6 +17,8 @@ int main(int argc, char *argv[])
 
     if (strcmp(argv[1], "fib") == 0) {
         fib(atoi(argv[2]));
+    } else if (strcmp(argv[1], "tree") == 0) {
+        tree();
     }
 
     return 0;
